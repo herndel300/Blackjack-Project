@@ -1,0 +1,13 @@
+C:\Users\Herndel\Desktop\Blackjack Project\BlackjackProject\BlackjackProject\bin\Debug\BlackjackProject.exe.config
+C:\Users\Herndel\Desktop\Blackjack Project\BlackjackProject\BlackjackProject\bin\Debug\BlackjackProject.exe
+C:\Users\Herndel\Desktop\Blackjack Project\BlackjackProject\BlackjackProject\bin\Debug\BlackjackProject.pdb
+C:\Users\Herndel\Desktop\Blackjack Project\BlackjackProject\BlackjackProject\obj\Debug\BlackjackProject.Form1.resources
+C:\Users\Herndel\Desktop\Blackjack Project\BlackjackProject\BlackjackProject\obj\Debug\BlackjackProject.Form2.resources
+C:\Users\Herndel\Desktop\Blackjack Project\BlackjackProject\BlackjackProject\obj\Debug\BlackjackProject.onePlayerGame.resources
+C:\Users\Herndel\Desktop\Blackjack Project\BlackjackProject\BlackjackProject\obj\Debug\BlackjackProject.playerTwoMenu.resources
+C:\Users\Herndel\Desktop\Blackjack Project\BlackjackProject\BlackjackProject\obj\Debug\BlackjackProject.Properties.Resources.resources
+C:\Users\Herndel\Desktop\Blackjack Project\BlackjackProject\BlackjackProject\obj\Debug\BlackjackProject.csproj.GenerateResource.Cache
+C:\Users\Herndel\Desktop\Blackjack Project\BlackjackProject\BlackjackProject\obj\Debug\BlackjackProject.exe
+C:\Users\Herndel\Desktop\Blackjack Project\BlackjackProject\BlackjackProject\obj\Debug\BlackjackProject.pdb
+C:\Users\Herndel\Desktop\Blackjack Project\BlackjackProject\BlackjackProject\obj\Debug\BlackjackProject.csprojResolveAssemblyReference.cache
+C:\Users\Herndel\Desktop\Blackjack Project\BlackjackProject\BlackjackProject\obj\Debug\BlackjackProject.bettingWindow.resources
