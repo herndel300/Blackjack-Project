@@ -27,8 +27,6 @@ namespace BlackjackProject
         {
             onePlayerGame game = new onePlayerGame();
 
-            //if(desiredWagerUpDown.)
-
             if (Convert.ToInt32(Math.Round(desiredWagerUpDown.Value, 0)) > game.player1.chipTotal)
             {
                 MessageBox.Show("Insufficient amount of chips!");
