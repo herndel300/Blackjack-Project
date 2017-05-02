@@ -12,6 +12,8 @@ namespace BlackjackProject
 {
     public partial class Form1 : Form
     {
+        public Player player1 = new Player("Jack", 0, 500);
+
         public Form1()
         {
             InitializeComponent();
@@ -22,9 +24,9 @@ namespace BlackjackProject
         {
             this.Hide();
 
-            onePlayerGame game1 = new onePlayerGame();
+            /*onePlayerGame game1 = new onePlayerGame();
             game1.StartPosition = FormStartPosition.CenterScreen;
-            game1.Show();
+            game1.Show();*/
 
             bettingWindow betWindow = new bettingWindow();
             betWindow.StartPosition = FormStartPosition.CenterScreen;

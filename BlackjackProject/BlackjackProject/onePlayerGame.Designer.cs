@@ -30,12 +30,14 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(onePlayerGame));
             this.stayButton = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.doubledownButton = new System.Windows.Forms.Button();
             this.hitButton = new System.Windows.Forms.Button();
             this.dealButton = new System.Windows.Forms.Button();
             this.playerHandTotalTextBox = new System.Windows.Forms.TextBox();
             this.dealerHandTotalTextBox = new System.Windows.Forms.TextBox();
+            this.splitButton = new System.Windows.Forms.Button();
+            this.splitHitButton = new System.Windows.Forms.Button();
+            this.splitStayButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // stayButton
@@ -48,23 +50,15 @@
             this.stayButton.UseVisualStyleBackColor = true;
             this.stayButton.Click += new System.EventHandler(this.stayButton_Click);
             // 
-            // button3
+            // doubledownButton
             // 
-            this.button3.Location = new System.Drawing.Point(865, 266);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 46);
-            this.button3.TabIndex = 7;
-            this.button3.Text = "Double Down";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(865, 338);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 46);
-            this.button4.TabIndex = 8;
-            this.button4.Text = "Split";
-            this.button4.UseVisualStyleBackColor = true;
+            this.doubledownButton.Location = new System.Drawing.Point(865, 266);
+            this.doubledownButton.Name = "doubledownButton";
+            this.doubledownButton.Size = new System.Drawing.Size(75, 46);
+            this.doubledownButton.TabIndex = 7;
+            this.doubledownButton.Text = "Double Down";
+            this.doubledownButton.UseVisualStyleBackColor = true;
+            this.doubledownButton.Click += new System.EventHandler(this.doubledownButton_Click);
             // 
             // hitButton
             // 
@@ -93,7 +87,7 @@
             this.playerHandTotalTextBox.ForeColor = System.Drawing.SystemColors.Window;
             this.playerHandTotalTextBox.Location = new System.Drawing.Point(1, 609);
             this.playerHandTotalTextBox.Name = "playerHandTotalTextBox";
-            this.playerHandTotalTextBox.Size = new System.Drawing.Size(218, 31);
+            this.playerHandTotalTextBox.Size = new System.Drawing.Size(236, 31);
             this.playerHandTotalTextBox.TabIndex = 11;
             // 
             // dealerHandTotalTextBox
@@ -101,10 +95,40 @@
             this.dealerHandTotalTextBox.BackColor = System.Drawing.SystemColors.MenuText;
             this.dealerHandTotalTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dealerHandTotalTextBox.ForeColor = System.Drawing.SystemColors.Window;
-            this.dealerHandTotalTextBox.Location = new System.Drawing.Point(743, 609);
+            this.dealerHandTotalTextBox.Location = new System.Drawing.Point(730, 609);
             this.dealerHandTotalTextBox.Name = "dealerHandTotalTextBox";
-            this.dealerHandTotalTextBox.Size = new System.Drawing.Size(218, 31);
+            this.dealerHandTotalTextBox.Size = new System.Drawing.Size(231, 31);
             this.dealerHandTotalTextBox.TabIndex = 12;
+            // 
+            // splitButton
+            // 
+            this.splitButton.Location = new System.Drawing.Point(865, 335);
+            this.splitButton.Name = "splitButton";
+            this.splitButton.Size = new System.Drawing.Size(75, 46);
+            this.splitButton.TabIndex = 13;
+            this.splitButton.Text = "Split";
+            this.splitButton.UseVisualStyleBackColor = true;
+            this.splitButton.Click += new System.EventHandler(this.splitButton_Click);
+            // 
+            // splitHitButton
+            // 
+            this.splitHitButton.Location = new System.Drawing.Point(865, 126);
+            this.splitHitButton.Name = "splitHitButton";
+            this.splitHitButton.Size = new System.Drawing.Size(75, 46);
+            this.splitHitButton.TabIndex = 14;
+            this.splitHitButton.Text = "Hit2";
+            this.splitHitButton.UseVisualStyleBackColor = true;
+            this.splitHitButton.Click += new System.EventHandler(this.splitHitButton_Click);
+            // 
+            // splitStayButton
+            // 
+            this.splitStayButton.Location = new System.Drawing.Point(865, 197);
+            this.splitStayButton.Name = "splitStayButton";
+            this.splitStayButton.Size = new System.Drawing.Size(75, 46);
+            this.splitStayButton.TabIndex = 15;
+            this.splitStayButton.Text = "Stay2";
+            this.splitStayButton.UseVisualStyleBackColor = true;
+            this.splitStayButton.Click += new System.EventHandler(this.splitStayButton_Click);
             // 
             // onePlayerGame
             // 
@@ -113,12 +137,14 @@
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(962, 713);
+            this.Controls.Add(this.splitStayButton);
+            this.Controls.Add(this.splitHitButton);
+            this.Controls.Add(this.splitButton);
             this.Controls.Add(this.dealerHandTotalTextBox);
             this.Controls.Add(this.playerHandTotalTextBox);
             this.Controls.Add(this.dealButton);
             this.Controls.Add(this.hitButton);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.doubledownButton);
             this.Controls.Add(this.stayButton);
             this.Name = "onePlayerGame";
             this.Text = "Blackjack";
@@ -129,11 +155,13 @@
 
         #endregion
         private System.Windows.Forms.Button stayButton;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button doubledownButton;
         private System.Windows.Forms.Button hitButton;
         private System.Windows.Forms.Button dealButton;
         private System.Windows.Forms.TextBox playerHandTotalTextBox;
         private System.Windows.Forms.TextBox dealerHandTotalTextBox;
+        private System.Windows.Forms.Button splitButton;
+        private System.Windows.Forms.Button splitHitButton;
+        private System.Windows.Forms.Button splitStayButton;
     }
 }

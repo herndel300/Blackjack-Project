@@ -20,10 +20,10 @@ namespace BlackjackProject
     }
 
     //need to add chip total eventually. do this at the end
-    public Player(string name, int handValue, int chipTotal)
+    public Player(string name, int handTotal, int chipTotal)
     {
         this.name = name;
-        this.handTotal = handValue;
+        this.handTotal = handTotal;
         this.chipTotal = chipTotal;
     }
 

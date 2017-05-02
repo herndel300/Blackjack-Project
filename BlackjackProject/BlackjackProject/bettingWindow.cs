@@ -12,38 +12,50 @@ namespace BlackjackProject
 {
     public partial class bettingWindow : Form
     {
-        public int bet;
+        //SystemMenuManager manager;
+        //public int bet;
+
+        Form1 form = new Form1();
+        onePlayerGame game = new onePlayerGame();
 
         public bettingWindow()
         {
             InitializeComponent();
-            onePlayerGame game = new onePlayerGame();
 
-            currentChipsTextBox.Text = game.player1.chipTotal + "";
+            //this.menuManager = new SystemMenuManager(this, SystemMenuManager.MenuItemState.Removed);
+            //onePlayerGame game = new onePlayerGame();
+
+            currentChipsTextBox.Text = form.player1.chipTotal + "";
             currentChipsTextBox.Enabled = false;
+
         }
 
         private void acceptButton_Click(object sender, EventArgs e)
-        {
-            onePlayerGame game = new onePlayerGame();
+        { 
 
-            if (Convert.ToInt32(Math.Round(desiredWagerUpDown.Value, 0)) > game.player1.chipTotal)
+            if (Convert.ToInt32(desiredWagerUpDown.Value) > form.player1.chipTotal)
             {
                 MessageBox.Show("Insufficient amount of chips!");
             }
 
-            else if(Convert.ToInt32(Math.Round(desiredWagerUpDown.Value, 0)) <= 0)
+            else if(Convert.ToInt32(desiredWagerUpDown.Value) <= 0)
             {
                 MessageBox.Show("You must bet over $0!");
             }
 
             else
             {
-                game.player1.chipTotal = game.player1.chipTotal - Convert.ToInt32(Math.Round(desiredWagerUpDown.Value, 0));
-                bet = Convert.ToInt32(Math.Round(desiredWagerUpDown.Value, 0));
+                
                 this.Hide();
-                Console.WriteLine(game.player1.chipTotal);
-            } 
+                game.bet = Convert.ToInt32(desiredWagerUpDown.Value);
+                form.player1.chipTotal = form.player1.chipTotal - game.bet;
+                game.StartPosition = FormStartPosition.CenterScreen;
+                game.Show();
+
+            }
+
+            
+
         }
     }
 }
