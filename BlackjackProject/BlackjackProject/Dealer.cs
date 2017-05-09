@@ -9,10 +9,12 @@ namespace BlackjackProject
     public class Dealer
     {
         public int handTotal;
+        public List<Card> hand;
 
     public Dealer()
     {
         handTotal = 0;
+        hand = new List<Card>(); 
     }
 
     }

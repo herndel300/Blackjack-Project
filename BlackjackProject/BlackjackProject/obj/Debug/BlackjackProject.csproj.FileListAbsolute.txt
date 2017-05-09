@@ -11,3 +11,9 @@ C:\Users\Herndel\Desktop\Blackjack Project\BlackjackProject\BlackjackProject\obj
 C:\Users\Herndel\Desktop\Blackjack Project\BlackjackProject\BlackjackProject\obj\Debug\BlackjackProject.pdb
 C:\Users\Herndel\Desktop\Blackjack Project\BlackjackProject\BlackjackProject\obj\Debug\BlackjackProject.csprojResolveAssemblyReference.cache
 C:\Users\Herndel\Desktop\Blackjack Project\BlackjackProject\BlackjackProject\obj\Debug\BlackjackProject.bettingWindow.resources
+C:\Users\Herndel\Desktop\Blackjack Project\BlackjackProject\BlackjackProject\bin\Debug\Interop.WMPLib.dll
+C:\Users\Herndel\Desktop\Blackjack Project\BlackjackProject\BlackjackProject\bin\Debug\AxInterop.WMPLib.dll
+C:\Users\Herndel\Desktop\Blackjack Project\BlackjackProject\BlackjackProject\obj\Debug\Interop.WMPLib.dll
+C:\Users\Herndel\Desktop\Blackjack Project\BlackjackProject\BlackjackProject\obj\Debug\AxInterop.WMPLib.dll
+C:\Users\Herndel\Desktop\Blackjack Project\BlackjackProject\BlackjackProject\obj\Debug\BlackjackProject.csproj.ResolveComReference.cache
+C:\Users\Herndel\Desktop\Blackjack Project\BlackjackProject\BlackjackProject\obj\Debug\BlackjackProject.howToPlayMenu.resources

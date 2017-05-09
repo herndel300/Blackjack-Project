@@ -107,7 +107,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button acceptButton;
-        private System.Windows.Forms.NumericUpDown desiredWagerUpDown;
-        private System.Windows.Forms.TextBox currentChipsTextBox;
+        public System.Windows.Forms.NumericUpDown desiredWagerUpDown;
+        public System.Windows.Forms.TextBox currentChipsTextBox;
     }
 }

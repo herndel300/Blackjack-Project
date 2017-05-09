@@ -74,7 +74,7 @@
             this.twoPlayerButton.Name = "twoPlayerButton";
             this.twoPlayerButton.Size = new System.Drawing.Size(263, 81);
             this.twoPlayerButton.TabIndex = 3;
-            this.twoPlayerButton.Text = "Two Player";
+            this.twoPlayerButton.Text = "How to Play";
             this.twoPlayerButton.UseVisualStyleBackColor = true;
             this.twoPlayerButton.Click += new System.EventHandler(this.twoPlayerButton_Click);
             // 
